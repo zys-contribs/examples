@@ -10,6 +10,29 @@ This repository is structured in a specific way:
 - **Second-level directories** are **project directories** named after specific modules, frameworks, platforms, or tools - for example, `yargs` is a CLI framework, both `express` and `fastify` are web frameworks, and `moment` is a utility.
 - **Third-level directories** are **example directories**, where specific examples live. You can find a full list of these examples in the [Examples](#examples) section below.
 
+Here is an example of the structure in general terms:
+
+```text
+- examples (root)
+  - category
+    - project
+      - example
+  - category
+    - project
+      - example
+      - example
+      - example
+    - project
+      - example
+      - example
+  - category
+    - project
+      - example
+    - project
+      - example
+      - example
+```
+
 Each **example** has a few properties (if one doesn't, please [let us know](https://github.com/nodejs/examples/issues/new)):
 
 - Usable example code.
@@ -28,33 +51,7 @@ Command Line Interfaces (CLIs) are tools that can be accessed exclusively from t
 
 ## Contributing
 
-We genuinely appreciate folks who are trying to help out by lowering the barrier to understanding Node.js 🤗
-
-Our baseline for all contributions is following the project's [Code of Conduct](./CODE_OF_CONDUCT.md).
-
-### Contributing New Examples
-
-If you'd like to contribute an example, we'd genuinely appreciate your help. , there's a few things we'll expect from any contribution of a new example:
-
-- Correct directory structure. This means:
-- Usable example code. This means:
-  - Comprehensive comments.
-  - Descriptive and readable variable names.
-  - Modern JavaScript.
-- We use Jest for testing. Examples' tests should check these boxes:
-  - Tests should be written for all code that can be tested.
-  - Tests should be in the format of `<name-of-file-being-tested>.test.js` and should live alongside the files they're testing.
-- Proper documentation. This means:
-  - A README.md that explains what the example does and how to use it, plus documents the examples dependencies.
-  - The README should include a title, description, instructions for usage, and instructions for running the test.
-
-### Contributing to Tests
-
-We're always willing to take on more tests or improvements to our existing tests. We use Jest, and actively leverage the `onlyChanged` flag to reduce nosie in our CI.
-
-### Contributing to Prose
-
-This repository has a non-trivial amount of written content. If you're interested in helping provide clarity and context or otherwise improving our prose, we welcome your contributions.
+We've documented how to meaningfully contribute in [CONTRIBUTING.md](./CONTRIBUTING.md) 🤗
 
 ### Thank You To Our Contributors
 
@@ -66,6 +63,7 @@ This repository has a non-trivial amount of written content. If you're intereste
 <table>
   <tr>
     <td align="center"><a href="https://bnb.im"><img src="https://avatars3.githubusercontent.com/u/502396?v=4" width="100px;" alt=""/><br /><sub><b>Tierney Cyren</b></sub></a><br /><a href="https://github.com/node/examples/commits?author=bnb" title="Code">💻</a> <a href="#content-bnb" title="Content">🖋</a> <a href="https://github.com/node/examples/commits?author=bnb" title="Documentation">📖</a> <a href="https://github.com/node/examples/commits?author=bnb" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/mcollina"><img src="https://avatars0.githubusercontent.com/u/52195?v=4" width="100px;" alt=""/><br /><sub><b>Matteo Collina</b></sub></a><br /><a href="#infra-mcollina" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#ideas-mcollina" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
